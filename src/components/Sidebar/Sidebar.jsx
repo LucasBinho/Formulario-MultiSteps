@@ -46,8 +46,8 @@ function Sidebar() {
         </div>
         <div className="navMenu">
            {
-            menuItems.map((el, index)=> 
-              <Link className="menuItem" to={el.route} key={index + 1}>
+            menuItems.map((el, index)=>    
+              <Link className={showSidebar ? "menuItem" : "menuItem menuItemOut"} to={el.route} key={index + 1}>
                 <span className="menuItemLogo">{el.icon}</span>
                 {showSidebar && <p>{el.text}</p>}
                 </Link>)

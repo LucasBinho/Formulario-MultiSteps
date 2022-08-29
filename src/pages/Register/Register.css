@@ -33,6 +33,10 @@
     
 }
 
+.step{
+  margin-bottom: 0.5em;
+}
+
 .inputPageOne, .inputPageTwo, .inputPageThree {
   width: 25em;
   height: 2.25em;

@@ -1,10 +1,37 @@
-.clients {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.clientFlex {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../assets/clientList.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-left: 10em;
+    padding: 2em;
+}
+
+.clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    padding: 10em;
+    margin: 1em;
+     box-shadow: 0 4px 8px 0 rgba(237, 20, 20, 0.2);
+    border-radius: 5px; 
    
 }
 
+
+
+.singleClient {
+    text-decoration: none;
+    color: black;
+    padding: 0.5em;
+}
+
+.singleClient:hover {
+    text-decoration: underline;
+}

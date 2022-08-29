@@ -1,40 +1,20 @@
-import { useContext } from "react";
+import { useContext} from "react";
 import { UserInfo } from "../../Context/context";
-import { CardClient } from "./CardClient";
-import './Clients.css'
+import { Link } from "react-router-dom";
+import "./Clients.css";
 
 export const Clients = () => {
-
-// const { userDetailsOne, userDetailsTwo, userDetailsThree, SetArrayOfCards, arrayOfCards } = useContext(UserInfo);
-
-
-const { arrayOfCards } = useContext(UserInfo);
+  const { arrayOfCards } = useContext(UserInfo);
 
 
-
-
-//  SetCardValues({...userDetailsOne, ...userDetailsTwo, ...userDetailsThree});
-
-
-    return(
-        <div className="clientFlex">
-            <div className="clients">
-                {arrayOfCards.map((card, index)=>(
-                    <CardClient
-                        key={index}
-                        nome={card.firstName}
-                        sobrenome={card.lastName}
-                        email={card.email}
-                        telefone={card.phone}
-                        cep={card.cep}
-                        endereço={card.adress}
-                        complemento={card.complement}
-                        data={card.bornDate}
-                        cpf={card.cpf}
-                        renda={card.monthlyIncome}
-                    />
-                ))}
-            </div>
-        </div>
-    )
-}
+  return (
+    <div className="clientFlex">
+        <h1>Lista de Clientes Cadastrados:</h1>
+      <div className="clients">
+        {arrayOfCards.map((client, index) => (   
+              <Link className="singleClient" to={`/Client/${index + 1}`} key={index}><p>{`Cadastro ${index + 1}: ${client.firstName} ${client.lastName}`}</p></Link>
+        ))}
+      </div>
+    </div>
+  );
+};

@@ -1,9 +1,13 @@
 .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 2em;
     margin-top: 1em;
     border-radius: 5px;
     border: 1px solid #2a3347;
     box-shadow: 3px 4px 0px 0px #2a3347;
+    text-decoration: none;
 }
 
 .btn:hover {

@@ -72,6 +72,11 @@
     position: relative;
 }
 
+.menuItemOut {
+  width: 4.5em;
+}
+
 .menuItemLogo{
     padding: 0 20px;
 }
+
