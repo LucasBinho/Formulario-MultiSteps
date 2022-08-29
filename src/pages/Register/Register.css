@@ -1,0 +1,44 @@
+.registerPageOne, .registerPageTwo, .registerPageThree {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageOneCard, .pageTwoCard, .pageThreeCard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 9em;
+}
+
+.pageTwoCard, .pageThreeCard {
+  padding: 10em;
+}
+
+
+
+.formPageOne, .formPageTwo, .formPageThree {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formTitle {
+    position: absolute;
+    top: 3.5em;
+    box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    
+}
+
+.inputPageOne, .inputPageTwo, .inputPageThree {
+  width: 25em;
+  height: 2.25em;
+  border: 1px solid black;
+}
+
+Button {
+  width: 25em;
+}

@@ -1,0 +1,77 @@
+.sidebar-container {
+  background-color: #2a3347;
+  width: 17.75em;
+  height: 100vh;
+  position: relative;
+  color: whitesmoke;
+
+  transition: 0.5s;
+}
+
+.sidebar-container-Out {
+  width: 5.3125em;
+}
+
+.sidebar-upper,
+.navHeader,
+.navMenu,
+.menuItem {
+  display: grid;
+}
+
+.navHeader {
+  grid-template-columns: 2fr, 1fr;
+  grid-template-rows: 1fr;
+  height: 4.6875em;
+}
+
+.navLogo {
+  display: flex;
+  align-items: center;
+}
+.faDev {
+  width: 3.5em;
+  height: 2em;
+}
+
+.navBurguer {
+  position: absolute;
+  right: 0;
+  border: none;
+  cursor: pointer;
+  margin: auto -35px;
+  border: 2px solid white;
+  padding: 1.25em;
+  border-radius: 50%;
+  width: 4.4375em;
+  height: 4.425em;
+  background-color: grey;
+}
+
+.burguerIcon {
+  width: 1.5em;
+  height: 1.5em;
+  color: rgb(9, 9, 9);
+  transition: 0.4s;
+}
+
+.navMenu {
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 50px;
+}
+
+.menuItem {
+    display: flex;
+    
+    height: 57px;
+    width: 16em;
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: auto 15px;
+    position: relative;
+}
+
+.menuItemLogo{
+    padding: 0 20px;
+}
